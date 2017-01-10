@@ -38,12 +38,12 @@
     "express-validator": "*",
     "mongodb": "*",
     "mongoose": "*",
+    "morgan": "^1.7.0",
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*"
   },
   "devDependencies": {
-    "morgan": "^1.7.0",
     "nodemon": "^1.11.0"
   }
 }
