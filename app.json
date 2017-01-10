@@ -3,6 +3,6 @@
     "description": "Buy your university books at a cheaper price with more accessibility",
     "keywords": ["ExpressJs", "NodeJs", "MongoDb", "Bootstrap", "Ejs", "FireBaseStorage"],
     "repository": "https://github.com/jesseokeya/Rachelle",
-    "logo": " ",
-    "image": " ",
+    "logo": "http://freedomdefined.org/upload/3/38/Official-logo.svg",
+    "image": "http://freedomdefined.org/upload/3/38/Official-logo.svg"
 }
