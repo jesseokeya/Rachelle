@@ -1,0 +1,49 @@
+{
+  "name": "rachelle",
+  "version": "1.0.0",
+  "description": "Platform were university students have easy accessibility to text books they need and for a cheaper price range",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "open http://localhost:3000 && nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesseokeya/Rachelle.git"
+  },
+  "keywords": [
+    "ExpressJs",
+    "NodeJs",
+    "MongoDb",
+    "Bootstrap",
+    "Ejs",
+    "FireBaseStorage"
+  ],
+  "author": "Jesse Okeya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesseokeya/Rachelle/issues"
+  },
+  "homepage": "https://github.com/jesseokeya/Rachelle#readme",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.5.5",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "devDependencies": {
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0"
+  }
+}
