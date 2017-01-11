@@ -15,7 +15,10 @@ router.get('/register', function(req, res) {
 router.get('/login', function(req, res) {
     res.render('pages/login.handlebars');
 });
-
+//email subscription
+router.get('/subscribe', function(req, res) {
+    res.render('subscribe/subscribe.ejs');
+});
 // Register User
 router.post('/register', function(req, res) {
     var name = req.body.name;
