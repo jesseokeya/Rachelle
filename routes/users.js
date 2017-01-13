@@ -8,16 +8,16 @@ var User = require('../models/user');
 
 // Register
 router.get('/register', function(req, res) {
-    res.render('pages/register.handlebars');
+    res.render('register/register');
 });
 
 // Login
 router.get('/login', function(req, res) {
-    res.render('pages/login.handlebars');
+    res.render('login/login');
 });
 //email subscription
 router.get('/subscribe', function(req, res) {
-    res.render('subscribe/subscribe.ejs');
+    res.render('subscribe/subscribe', {layout: false});
 });
 // Register User
 router.post('/register', function(req, res) {
@@ -42,7 +42,7 @@ router.post('/register', function(req, res) {
     var errors = req.validationErrors();
 
     if (errors) {
-        res.render('pages/register.handlebars', {
+        res.render('pages/register', {
             errors: errors
         });
     } else {

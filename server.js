@@ -12,8 +12,9 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-var ejs = require('ejs');
-mongoose.connect('mongodb://Okeya:Jesse@ds045521.mlab.com:45521/node-autentication');
+var configDB = require('./config/database.js');
+
+mongoose.connect(configDB.url);
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
@@ -24,9 +25,9 @@ var app = express();
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', exphbs({defaultLayout:'layout'}));
-app.set('view engine', 'handlebars');
-app.set('view engine', 'ejs');
+app.engine('hbs', exphbs({defaultLayout:'layout', extname: 'hbs'}));
+app.set('view engine', 'hbs');
+
 
 // BodyParser Middleware
 app.use(logger('dev'));

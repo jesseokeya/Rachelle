@@ -5,17 +5,17 @@ var User = require('../models/user.js');
 // Get Homepage
 router.get('/', function(req, res){
 	console.log();
-	res.render('index.ejs');
+	res.render('home/index', {layout: false});
 });
 
 router.get('/user/home', ensureAuthenticated, function(req, res){
 	console.log();
-	res.render('loggedIn/user.ejs');
+	res.render('user/user');
 });
 
 router.get('/directory', function(req, res){
 	console.log();
-	res.render('loggedIn/user.ejs');
+	res.render('user/user');
 });
 
 
