@@ -10,7 +10,7 @@ router.get('/', function(req, res){
 
 router.get('/user/home', ensureAuthenticated, function(req, res){
 	console.log();
-	res.render('user/user');
+	res.render('user/user', {layout: false});
 });
 
 router.get('/directory', function(req, res){
